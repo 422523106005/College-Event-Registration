@@ -87,26 +87,23 @@
 </div>
     <h2 id="register">Registration Form</h2>
 
-    <form class="registration-form">
-        <label>Name:</label>
-        <input type="text" id="name" placeholder="Enter your name">
+    <h2 id="register">Registration Form</h2>
 
-        <br><br>
+<form action="https://formspree.io/f/mvkplzby" method="POST" class="registration-form">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="Name" placeholder="Enter your name" required><br><br>
 
-        <label>Email:</label>
-        <input type="email" id="email"
-        placeholder="Enter your email">
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="Email" placeholder="Enter your email" required><br><br>
 
-        <br><br>
-        <label>Department:</label>
-        <input type="text" id="department" placeholder="Enter your department">
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="Phone Number" placeholder="Enter your phone number" required><br><br>
 
+  <label for="department">Department:</label><br>
+  <input type="text" id="department" name="Department" placeholder="Enter your department" required><br><br>
 
-
-        <br><br>
-
-        <button type="button" onclick="registerUser()">Register</button>
-        <p id="message"></p>
+  <button type="submit">Register</button>
+</form>
 <script src="script.js"></script>
 
 <footer>
